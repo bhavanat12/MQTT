@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Welcome to my app</title>
+</head>
+<body>
+  {% for message in messages reversed %}
+        {% if message.topic == Topic %}
+        <p>{{ message.fullname }}</p>
+        <p style="color:blue">{{ message.time }}</p>
+        <br>
+        {% endif %}
+  {% endfor %}
+</body>
+</html>
